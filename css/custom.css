@@ -13088,3 +13088,11 @@ progress {
 .height-principalPage {
   height: calc(100vh - 75px);
 }
+
+.bg-index-1 {
+  z-index: -1;
+}
+
+.filter-light {
+  filter: light(30%);
+}
