@@ -13058,3 +13058,33 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+/* HEADER CHANGES */
+.height-header {
+  height: 75px;
+}
+
+.hover-grey:hover {
+  color: grey;
+}
+
+.nav-link {
+  color: black;
+}
+
+.shoppingCart {
+  background: black;
+  margin-left: -10px;
+  border-radius: 0.8em;
+  color: white;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 15px;
+  text-align: center;
+  font-size: 11px;
+  width: 15px;
+}
+
+/* PAGINA PRINCIPAL  */
+.height-principalPage {
+  height: calc(100vh - 75px);
+}
