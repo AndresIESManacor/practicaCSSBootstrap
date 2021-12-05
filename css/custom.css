@@ -13058,6 +13058,15 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
+/* GENERAL USAGE */
+.z-back {
+  z-index: -1;
+}
+
+.z-front {
+  z-index: 1;
+}
+
 /* HEADER CHANGES */
 .height-header {
   height: 75px;
@@ -13089,10 +13098,16 @@ progress {
   height: calc(100vh - 75px);
 }
 
-.bg-index-1 {
-  z-index: -1;
+.filter-contrast-80-opacity-09 {
+  filter: contrast(70%) opacity(0.9);
 }
 
-.filter-light {
-  filter: light(30%);
+.filter-brightness-40-opacity-1 {
+  filter: opacity(1) brightness(40%);
+}
+
+.btn-outline-secondary {
+  border: black solid 4px;
+  border-radius: 0;
+  width: 150px;
 }
