@@ -13111,3 +13111,12 @@ progress {
   border-radius: 0;
   width: 150px;
 }
+
+.fs-0 {
+  font-size: 70px;
+}
+
+/* AD */
+.cover-img {
+  object-fit: cover;
+}

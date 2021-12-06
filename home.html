@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="Font_Awesome.css"/>
 </head>
 <body>
-<div class="container mw-100 h-auto">
+<div class="container mw-100 h-auto m-0 p-0">
 
     <!-- HEADER -->
     <div class="row height-header">
@@ -23,7 +23,7 @@
                 <a class="nav-link hover-grey" href="#footer">Contact</a>
             </nav>
         </div>
-        <div class="col-lg-3 col-6 height-header text-end">
+        <div class="col-lg-3 col-6 height-header text-end p-0">
             <nav class="navbar d-flex justify-content-end pt-4 pe-4 fw-bold">
                 <a href="Llista.html"><i class="far fa-search nav-link ps-2 fw-bold hover-grey"></i></a>
                 <a href="login.html"><i class="far fa-heart nav-link ps-3 fw-bold hover-grey"></i></a>
@@ -40,22 +40,43 @@
 
     <!-- FRONT PAGE -->
     <div class="row height-principalPage">
-        <div class="col-lg-12 d-lg-block d-none fw-bold text-center position-absolute z-front" style="font-size: 70px">
-            <p><a>Find Your<br>Perfect<br></a><a class="text-decoration-underline text-dark">Sport Cars</a></p>
-        </div>
-        <div class="col-lg-6 text-dark align-self-center ps-5 m-0 z-front">
+        <p class="col-lg-12 d-lg-block d-none fw-bold text-center z-front fs-0 pt-5 position-absolute">
+            <a>Find Your<br>Perfect<br></a><a class="text-decoration-underline text-dark">Sport Cars</a>
+        </p>
+        <div class="col-lg-6 d-lg-block d-none text-dark align-self-center ps-5 m-0 z-front">
             <h1>New Cars</h1><br>
             <p><strong>From $30.000</strong></p><br>
             <p>Buy the newest cars that we only sell here and only need to click the car you like<br> and it will be done in just seconds.</p><br><br>
-            <button class="btn btn btn-outline-secondary btn-lg text-uppercase" style="font-size: 15px" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
+            <button class="btn btn-outline-secondary btn-lg text-uppercase" style="font-size: 15px" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
         </div>
         <div class="col-lg-6 d-lg-block d-none p-0 m-0 filter-contrast-80-opacity-09">
             <img class="height-principalPage w-100" src="img/agentough-111.jpg" alt="fontimg"/>
         </div>
-
-        <img class="height-principalPage w-100 d-lg-none d-block bg-index-1 p-0 m-0 position-absolute z-back filter-brightness-40-opacity-1" src="img/agentough-111.jpg" alt="fontimg"/>
+        <!-- Responsive appear this -->
+        <div class="d-block d-lg-none text-white align-self-center p-0 ps-5 m-0 z-front">
+            <h1>New Cars</h1><br>
+            <p><strong>From $30.000</strong></p><br>
+            <p>Buy the newest cars that we only sell here and only need to click the car you like<br> and it will be done in just seconds.</p><br><br>
+            <button class="btn btn-outline-secondary btn-lg bg-white text-dark text-uppercase" style="font-size: 15px" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
+        </div>
+        <img class="height-principalPage mw-100 d-lg-none d-block bg-index-1 p-0 m-0 position-absolute z-back filter-brightness-40-opacity-1" src="img/agentough-111.jpg" alt="fontimg"/>
     </div>
 
+    <!-- AD -->
+    <div class="row h-auto">
+        <div class="col-12 pt-5 pb-5">
+            <div class="col-lg-6">
+                <h1>Find Your <br>Favorite Sport Vehicles</h1>
+                <p><strong>From $30.0000</strong></p><br>
+                <p>So many types of vehicles to buy today and dont be more than you can think, dont wait anymore and buy it now.</p><br><br>
+                <button class="adButton" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
+            </div>
+            <div class="col-lg-6">
+                
+            </div>
+            <img class="w-100 h-50 cover-img" src="img/timothy-colin-pausemenugif01.gif" alt="gif">
+        </div>
+    </div>
 </div>
 </body>
 </html>
