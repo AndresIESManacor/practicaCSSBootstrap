@@ -28,12 +28,15 @@
 
 // 5. Add additional custom code h
 
-/* GENERAL USAGE */
+/* GENERAL USAGE AND CHANGES ON BOOTSTRAP CLASSES */
 .z-back {
   z-index: -1;
 }
 .z-front {
   z-index: 1;
+}
+.fs-7 {
+ font-size: 15px;
 }
 .nav-link {
   color: black;
@@ -49,20 +52,31 @@
   border-radius: 0;
   width: 150px;
 }
+.cover-img {
+  object-fit: cover;
+}
+
+/* FILTERS */
+.filter-contrast-70 {
+  filter: contrast(70%);
+}
+.filter-contrast-reset {
+  filter: contrast(140%);
+}
+
+.filter-none {
+  filter: none;
+}
+
 
 /* HEADER CHANGES */
 .height-header {
   height: 75px;
 }
 .shoppingCart{
-  background: black;
   margin-left: -10px;
   border-radius: 0.8em;
-  color: white;
-  display: inline-block;
-  font-weight: bold;
   line-height: 15px;
-  text-align: center;
   font-size: 11px;
   width: 15px;
 }
@@ -71,40 +85,35 @@
 .height-principalPage {
   height: calc(100vh - 75px);
 }
-.bg-img-need-for-speed-50 {
-  background-image: url('../img/agentough-111.jpg');
+.bg-img-frontPage-50 {
+  background-image: url('../img/frontPageimg.jpg');
   background-size: 50% 100%;
   background-position: right;
   background-repeat: no-repeat;
-  object-fit: cover;
 }
-.bg-img-need-for-speed-100 {
-  background-image: url('../img/agentough-111.jpg');
-  background-size: 100% 100%;
+.bg-img-frontPage-100 {
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-image: url('../img/frontPageimg.jpg');
+  background-size: auto;
+  background-position: center;
 }
 
 /* AD */
-.cover-img {
-  object-fit: cover;
-}
 .bg-gif-need-for-speed-100 {
-  padding-top: 100px;
+  background-repeat: no-repeat;
+  padding-top: 200px;
   background-image: url('../img/timothy-colin-pausemenugif01.gif');
   background-size: auto;
-  background-repeat: no-repeat;
   background-position: center;
-  object-fit: cover;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+}
+.btn-outline-primary {
+  border: 0;
+  border-radius: 0;
+  width: 150px;
 }
 
 /* List of Cars */
-
-/* Star color personalize */
-.text-FFA500FF {
-  color: orange;
-}
-.bg-lineal-F6F6F6 {
-  background: linear-gradient(#F6F6F6, #F6F6F6);
+.bg-white-cloud {
+  background: #F6F6F6;
 }

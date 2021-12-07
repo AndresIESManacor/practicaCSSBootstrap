@@ -10,14 +10,14 @@
 <div class="container mw-100 h-auto m-0 p-0">
 
     <!-- HEADER -->
-    <div class="row height-header mw-100 m-0">
+    <div id="header" class="row height-header mw-100 m-0 bg-white">
         <div class="col-lg-3 col-6 height-header">
             <a href="home.html"><img class="h-75 pt-3 ps-5" src="img/iesmanacor.png" alt="iesmanacor"></a>
         </div>
         <div class="col-lg-6 d-lg-block d-none height-header text-center">
             <nav class="navbar navbar-light d-flex justify-content-center pt-3 fw-bold">
                 <a class="nav-link hover-grey" href="home.html">Home</a>
-                <a class="nav-link hover-grey" href="Llista.html">Cars</a>
+                <a class="nav-link hover-grey" href="list.html">Cars</a>
                 <a class="nav-link hover-grey" href="#">Blog</a>
                 <a class="nav-link hover-grey" href="#comments">Comments</a>
                 <a class="nav-link hover-grey" href="#footer">Contact</a>
@@ -25,11 +25,11 @@
         </div>
         <div class="col-lg-3 col-6 height-header text-end p-0">
             <nav class="navbar d-flex justify-content-end pt-4 pe-4 fw-bold">
-                <a href="Llista.html"><i class="far fa-search nav-link ps-2 fw-bold hover-grey"></i></a>
+                <a href="list.html"><i class="far fa-search nav-link ps-2 fw-bold hover-grey"></i></a>
                 <a href="login.html"><i class="far fa-heart nav-link ps-3 fw-bold hover-grey"></i></a>
                 <a href="#">
                     <i class="far fa-shopping-cart nav-link ps-3 fw-bold hover-grey">
-                        <span class="shoppingCart bg-black text-white rounded-circle">1</span>
+                        <span class="shoppingCart d-inline-block fw-bold text-center bg-black text-white rounded-circle">1</span>
                     </i>
                 </a>
                 <a><i class="far fa-language nav-link ps-3 fw-bold hover-grey"></i></a>
@@ -40,15 +40,15 @@
 
     <!-- FRONT PAGE -->
     <div class="row height-principalPage mw-100 m-0 d-lg-block d-none">
-        <div class="container">
-            <div class="row height-principalPage bg-img-need-for-speed-50">
-                <div class="col-lg-4 text-dark align-self-center ps-5 m-0 z-front">
+        <div class="container p-0">
+            <div class="row height-principalPage bg-img-frontPage-50 filter-contrast-70 cover-img m-0">
+                <div class="col-lg-4 text-dark align-self-center ps-5 m-0 z-front filter-contrast-reset">
                     <h1>New Cars</h1><br>
-                    <p><strong>From $30.000</strong></p><br>
-                    <p>Buy the newest cars that we only sell here and only need to click the car you like<br> and it will be done in just seconds.</p><br><br>
-                    <button class="btn btn-outline-secondary btn-lg text-uppercase" style="font-size: 15px" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
+                    <p><strong>From $30.000</strong></p>
+                    <p>Buy the newest cars that we only sell here and only need to click the car you like<br> and it will be done in just seconds.</p><br>
+                    <button class="btn btn-outline-secondary btn-lg text-uppercase fs-7" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
                 </div>
-                <p class="col-lg-4 fw-bold text-center z-front fs-0 pt-5">
+                <p class="col-lg-4 fw-bold text-center z-front filter-contrast-reset fs-0 pt-5">
                     <a>Find Your<br>Perfect<br></a><a class="text-decoration-underline text-dark">Sport Cars</a>
                 </p>
             </div>
@@ -58,12 +58,12 @@
     <!-- Responsive appear this -->
     <div class="row height-principalPage mw-100 m-0 d-lg-none d-block">
         <div class="container">
-            <div class="row height-principalPage bg-img-need-for-speed-100 pt-5 pb-5 pe-5">
+            <div class="row height-principalPage bg-img-frontPage-100 cover-img pt-5 pb-5 pe-5">
                 <div class="text-white fw-bold align-self-center p-0 ps-5 m-0 z-front">
                     <h1>New Cars</h1><br>
                     <p><strong>From $30.000</strong></p><br>
                     <p>Buy the newest cars that we only sell here and only need to click the car you like<br> and it will be done in just seconds.</p><br><br>
-                    <button class="btn btn-outline-secondary btn-lg bg-white text-dark text-uppercase" style="font-size: 15px" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
+                    <button class="btn btn-outline-secondary btn-lg bg-white text-dark text-uppercase fs-7" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
                 </div>
             </div>
         </div>
@@ -72,15 +72,15 @@
     <!-- AD -->
     <div class="row mw-100 m-0 mt-5 mb-5">
         <div class="container">
-            <div class="row text-white bg-gif-need-for-speed-100 ps-5">
+            <div class="row text-white bg-gif-need-for-speed-100 cover-img ps-3">
+                <div class="col-lg-6 d-lg-block d-none text-start p-0">
+                    <img class="h-25" src="img/nfsh-hero-large-adaptive-logo-xl.png.adapt.crop1x1.320w.png" alt="png">
+                </div>
                 <div class="col-lg-6 pt-5 pb-5">
                     <h1>Find Your <br>Favorite Sport Vehicles</h1>
-                    <p><strong>From $30.0000</strong></p><br>
-                    <p>So many types of vehicles to buy today and dont be more than you can think, dont wait anymore and buy it now.</p><br><br>
-                    <button class="hover-grey" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
-                </div>
-                <div class="col-lg-6 d-lg-block d-none text-end p-0">
-                    <img class="h-25 w-25" src="img/nfsh-hero-large-adaptive-logo-xl.png.adapt.crop1x1.320w.png" alt="png">
+                    <p><strong>From $30.0000</strong></p>
+                    <p>So many types of vehicles to buy today and dont be more than you can think, dont wait anymore and buy it now.</p><br>
+                    <button class="p-2 btn btn-outline-primary hover-grey btn-lg bg-white text-dark text-uppercase fs-7 fw-bold" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
                 </div>
             </div>
         </div>
@@ -88,18 +88,21 @@
 
     <!-- LIST OF CARS -->
     <div class="row mw-100 m-0">
-        <div class="container">
+        <div class="container p-0">
             <div class="row d-flex">
-                <h1 class="text-uppercase text-center">List of games</h1>
-                <a class="text-end text-decoration-none hover-grey">view all</a>
+                <p class="w-25"></p>
+                <h1 class="w-50 text-center fs-1">List Of Games</h1>
+                <div class="w-25 text-end">
+                    <a class="text-decoration-none hover-grey" href="#">view all</a>
+                </div>
             </div>
-            <div class="row d-flex justify-content-between flex-row flex-wrap m-5">
+            <div class="row d-flex justify-content-evenly align-content-between flex-row flex-wrap m-5">
 
-                <div class="container w-25 p-0 m-0 d-flex flex-column ps-3 pe-3 mb-5">
-                    <div class="row pt-5 pb-5 bg-lineal-F6F6F6">
-                        <a href='fitxa.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
-                        <button class="d-lg-none d-block w-100">Add to Cart</button>
+                <div class="container w-25 p-0 m-0 d-flex flex-column">
+                    <div class="row w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                        <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
                     </div>
+                    <button class="d-lg-none d-block w-100">Add to Cart</button>
                     <!--<div class="position-absolute">
                         <img class="w-25" src='img/Logos/Chevrolet-logo.png' alt='logo'>
                         <input class="w-25" type='button' name='new' value='New!!'/>
@@ -110,7 +113,7 @@
                         <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
                     </div>
                     <div class="row">
-                        <ul class="text-FFA500FF mt-2 mb-2">
+                        <ul class="text-warning mt-2 mb-2">
                             <li class="fas fa-star"></li>
                             <li class="fas fa-star"></li>
                             <li class="fas fa-star"></li>
