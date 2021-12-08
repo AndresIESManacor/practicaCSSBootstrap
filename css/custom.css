@@ -13097,6 +13097,10 @@ a {
   object-fit: cover;
 }
 
+.m-6 {
+  margin: 125px;
+}
+
 /* HEADER CHANGES */
 .height-header {
   height: 75px;
@@ -13132,11 +13136,11 @@ a {
 /* AD */
 .bg-gif-need-for-speed-100 {
   background-repeat: no-repeat;
-  padding-top: 200px;
+  padding-top: 150px;
   background-image: url("../img/timothy-colin-pausemenugif01.gif");
   background-size: auto;
   background-position: center;
-  padding-bottom: 200px;
+  padding-bottom: 150px;
 }
 
 .btn-outline-primary {
