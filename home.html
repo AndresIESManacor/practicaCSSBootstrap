@@ -540,8 +540,8 @@
     </div>
 
     <!-- FOOTER -->
-    <div class="row mw-100 m-0 bg-black text-white" id="footer">
-        <div class="col-lg-3 ps-5 ms-5 mt-2 pt-5 m-0 p-0">
+    <div class="row mw-100 m-0 bg-black text-white pb-3" id="footer">
+        <div class="col-lg-3 ps-5 pt-5 m-0 mt-2 p-0">
             <a href="home.html"><img class="w-25 mb-4" src="img/iesmanacor.png" alt="img"></a>
             <div class="mb-4">
                 <p class="p-0 m-0">Arta, 07570</p>
@@ -553,8 +553,24 @@
                 <p class="p-0 m-0">Email: militaxx5@gmail.com</p>
             </div>
         </div>
-        <div class="col-lg-6 d-flex flex-row mt-2 pt-5">
-            <div class="col-lg-4 d-flex flex-column">
+        <div class="col-lg-6 d-lg-flex flex-row mt-2 pt-5">
+
+            <!-- COLLAPSE 1 -->
+            <div class="col-lg-4 d-flex flex-column d-lg-none">
+                <h2 class="pb-3 fw-bold"><a type="button" data-toggle="collapse" data-target="footer1">Shop by</a></h2>
+                <div class="collapse" id="footer1">
+                    <a class="text-white text-decoration-none" href="#">Applications</a>
+                    <a class="text-white text-decoration-none" href="#">View all</a>
+                    <a class="text-white text-decoration-none" href="#">Buy random game</a>
+                    <a class="text-white text-decoration-none" href="#">My note for this project</a>
+                    <a class="text-white text-decoration-none" href="#">How is the most Pro</a>
+                    <a class="text-white text-decoration-none" href="#">System Operative</a>
+                    <a class="text-white text-decoration-none" href="#header">Top</a>
+                </div>
+            </div>
+
+            <!-- NOT COLLAPSE 1 -->
+            <div class="col-lg-4 d-lg-flex flex-column d-none">
                 <h2 class="pb-3 fw-bold">Shop by</h2>
                 <a class="text-white text-decoration-none" href="#">Applications</a>
                 <a class="text-white text-decoration-none" href="#">View all</a>
@@ -564,7 +580,9 @@
                 <a class="text-white text-decoration-none" href="#">System Operative</a>
                 <a class="text-white text-decoration-none" href="#header">Top</a>
             </div>
-            <div class="col-lg-4 d-flex flex-column">
+
+            <!-- NOT COLLAPSE 2 -->
+            <div class="col-lg-4 d-lg-flex flex-column d-none">
                 <h2 class="pb-3 fw-bold">Information</h2>
                 <a class="text-white text-decoration-none" href="#">About us</a>
                 <a class="text-white text-decoration-none" href="#">Cooperators</a>
@@ -574,7 +592,9 @@
                 <a class="text-white text-decoration-none" href="#">Blog</a>
                 <a class="text-white text-decoration-none" href="#">Settings</a>
             </div>
-            <div class="col-lg-4 d-flex flex-column">
+
+            <!-- NOT COLLAPSE 3 -->
+            <div class="col-lg-4 d-lg-flex flex-column d-none">
                 <h2 class="pb-3 fw-bold">Customers Service</h2>
                 <a class="text-white text-decoration-none" href="#">Help & FAQs</a>
                 <a class="text-white text-decoration-none" href="#">Terms of Conditions</a>
@@ -586,7 +606,12 @@
             </div>
         </div>
         <div class="col-lg-3 mt-2 pt-5">
-
+            <h2>Newsletter Sign Up</h2>
+            <p>Receive our lastest updates about our games and event</p>
+            <div class="p-0 m-0 w-100 d-flex flex-row">
+                <input class="w-50 p-2 me-4" type="text" value="Enter your email address">
+                <input class="w-25 p-2 bg-warning text-uppercase fw-bold" type="button" value="Submit" onclick="window.open('www.google.com')">
+            </div>
         </div>
     </div>
 </div>
