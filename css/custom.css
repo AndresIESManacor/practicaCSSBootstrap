@@ -13059,6 +13059,10 @@ progress {
   }
 }
 /* GENERAL USAGE AND CHANGES ON BOOTSTRAP CLASSES */
+a {
+  color: black;
+}
+
 .z-back {
   z-index: -1;
 }
@@ -13093,25 +13097,12 @@ progress {
   object-fit: cover;
 }
 
-/* FILTERS */
-.filter-contrast-70 {
-  filter: contrast(70%);
-}
-
-.filter-contrast-reset {
-  filter: contrast(140%);
-}
-
-.filter-none {
-  filter: none;
-}
-
 /* HEADER CHANGES */
 .height-header {
   height: 75px;
 }
 
-.shoppingCart {
+.shopping-number {
   margin-left: -10px;
   border-radius: 0.8em;
   line-height: 15px;
@@ -13134,7 +13125,7 @@ progress {
 .bg-img-frontPage-100 {
   background-repeat: no-repeat;
   background-image: url("../img/frontPageimg.jpg");
-  background-size: auto;
+  background-size: auto 100%;
   background-position: center;
 }
 
@@ -13155,11 +13146,20 @@ progress {
 }
 
 /* List of Cars */
-/* Star color personalize */
-.text-FFA500FF {
-  color: orange;
-}
-
 .bg-white-cloud {
   background: #F6F6F6;
+}
+
+.absolute-top {
+  top: 0;
+  left: 0;
+}
+
+.form-check input {
+  appearance: none;
+  background-color: #787878;
+}
+
+.form-check input:checked {
+  background-color: #191919;
 }

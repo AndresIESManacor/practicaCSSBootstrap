@@ -29,7 +29,7 @@
                 <a href="login.html"><i class="far fa-heart nav-link ps-3 fw-bold hover-grey"></i></a>
                 <a href="#">
                     <i class="far fa-shopping-cart nav-link ps-3 fw-bold hover-grey">
-                        <span class="shoppingCart d-inline-block fw-bold text-center bg-black text-white rounded-circle">1</span>
+                        <span class="shopping-number d-inline-block fw-bold text-center bg-black text-white rounded-circle">1</span>
                     </i>
                 </a>
                 <a><i class="far fa-language nav-link ps-3 fw-bold hover-grey"></i></a>
@@ -41,8 +41,8 @@
     <!-- FRONT PAGE -->
     <div class="row height-principalPage mw-100 m-0 d-lg-block d-none">
         <div class="container p-0">
-            <div class="row height-principalPage bg-img-frontPage-50 filter-contrast-70 cover-img m-0">
-                <div class="col-lg-4 text-dark align-self-center ps-5 m-0 z-front filter-contrast-reset">
+            <div class="row height-principalPage bg-img-frontPage-50 cover-img m-0">
+                <div class="col-lg-4 text-dark align-self-center ps-5 m-0 z-front">
                     <h1>New Cars</h1><br>
                     <p><strong>From $30.000</strong></p>
                     <p>Buy the newest cars that we only sell here and only need to click the car you like<br> and it will be done in just seconds.</p><br>
@@ -80,7 +80,7 @@
                     <h1>Find Your <br>Favorite Sport Vehicles</h1>
                     <p><strong>From $30.0000</strong></p>
                     <p>So many types of vehicles to buy today and dont be more than you can think, dont wait anymore and buy it now.</p><br>
-                    <button class="p-2 btn btn-outline-primary hover-grey btn-lg bg-white text-dark text-uppercase fs-7 fw-bold" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
+                    <button class="p-2 btn btn-outline-primary hover-grey btn-lg bg-white text-uppercase fs-7 fw-bold" onclick="window.open('http://localhost:63342/PracticaFinalCss/Llista.html','_self')" type="button">Shop now</button>
                 </div>
             </div>
         </div>
@@ -89,79 +89,372 @@
     <!-- LIST OF CARS -->
     <div class="row mw-100 m-0">
         <div class="container p-0">
-            <div class="row d-flex">
+            <div class="row d-flex mw-100 mb-5">
                 <p class="w-25"></p>
                 <h1 class="w-50 text-center fs-1">List Of Games</h1>
                 <div class="w-25 text-end">
                     <a class="text-decoration-none hover-grey" href="#">view all</a>
                 </div>
             </div>
-            <div class="row d-flex justify-content-evenly align-content-between flex-row flex-wrap m-5">
+            <div class="row w-100 p-0 m-0">
+                <div class="d-flex flex-row flex-wrap p-0 m-0 ps-5 pe-5">
 
-                <div class="container w-25 p-0 m-0 d-flex flex-column">
-                    <div class="row w-100 m-0 pt-5 pb-5 bg-white-cloud">
-                        <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
-                    </div>
-                    <button class="d-lg-none d-block w-100">Add to Cart</button>
-                    <!--<div class="position-absolute">
-                        <img class="w-25" src='img/Logos/Chevrolet-logo.png' alt='logo'>
-                        <input class="w-25" type='button' name='new' value='New!!'/>
-                        <input class="w-25" type='button' name='offer' value='offer!!'/>
-                    </div>-->
-                    <div class="row">
-                        <p class="text-secondary m-0">Chevrolet</p>
-                        <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
-                    </div>
-                    <div class="row">
-                        <ul class="text-warning mt-2 mb-2">
-                            <li class="fas fa-star"></li>
-                            <li class="fas fa-star"></li>
-                            <li class="fas fa-star"></li>
-                            <li class="fas fa-star"></li>
-                            <li class="fas fa-star"></li>
-                        </ul>
-                    </div>
-                    <div class="row">
-                        <p class="fw-bold ps-3 fs-4">$50000</p>
-                    </div>
-                    <div class="ps-3">
-                    <div class="form-check form-check-inline me-1">
-                        <input class="form-check-input fs-4" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                    </div>
-                    <div class="form-check form-check-inline me-1">
-                        <input class="form-check-input fs-4" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                    </div>
-                    </div>
-                </div>
+                    <!-- Single Car -->
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
 
-                <div class="w-25">
-                    car 1
-                </div>
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
 
-                <div class="w-25">
-                    car 1
-                </div>
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                            <div class="position-absolute d-flex flex-column absolute-top">
+                                <input class="w-25 align-self-end mt-3 me-3 bg-primary border border-primary text-white" type='button' name='new' value='New!!'/>
+                                <input class="w-auto align-self-end mt-3 me-3 bg-black text-white border-dark" type='button' value='Back Friday!!'/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="w-25">
-                    car 1
-                </div>
-                <div class="w-25">
-                    car 1
-                </div>
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
 
-                <div class="w-25">
-                    car 1
-                </div>
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
 
-                <div class="w-25">
-                    car 1
-                </div>
-                <div class="w-25">
-                    car 1
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                            <div class="position-absolute d-flex flex-column absolute-top">
+                                <input class="w-25 align-self-end mt-3 me-3 bg-danger border border-danger text-white" type='button' value='Offer!!'/>
+                                <input class="w-auto align-self-end mt-3 me-3 bg-black text-white border-dark" type='button' value='Back Friday!!'/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                            <div class="position-absolute d-flex flex-column absolute-top">
+                                <input class="w-25 align-self-end mt-3 me-3 bg-danger border border-danger text-white" type='button' value='Offer!!'/>
+                                <input class="w-auto align-self-end mt-3 me-3 bg-black text-white border-dark" type='button' value='Back Friday!!'/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                            <div class="position-absolute d-flex flex-column absolute-top">
+                                <input class="w-25 align-self-end mt-3 me-3 bg-primary border border-primary text-white" type='button' name='new' value='New!!'/>
+                                <input class="w-25 align-self-end mt-3 me-3 bg-danger border border-danger text-white" type='button' value='Offer!!'/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                            <div class="position-absolute d-flex flex-column absolute-top">
+                                <input class="w-auto align-self-end mt-3 me-3 bg-black text-white border-dark" type='button' value='Back Friday!!'/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                            <div class="position-absolute d-flex flex-column absolute-top">
+                                <input class="w-25 align-self-end mt-3 me-3 bg-danger border border-danger text-white" type='button' value='Offer!!'/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6 position-relative ps-3 pe-3 mb-4">
+                        <div class="row d-none d-lg-block w-100 m-0 pt-5 pb-5 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 pt-5 pb-5 ps-2 pe-2 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <!-- Responsive img -->
+                        <div class="row d-lg-none d-block w-100 m-0 ps-3 pb-4 pe-3 pt-2 bg-white-cloud">
+                            <a href='car.html'><img class="w-100 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                        </div>
+
+                        <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                        <div class="row d-none d-lg-block">
+                            <div class="position-absolute absolute-top">
+                                <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                            </div>
+                            <div class="position-absolute d-flex flex-column absolute-top">
+                                <input class="w-25 align-self-end mt-3 me-3 bg-primary border border-primary text-white" type='button' name='new' value='New!!'/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="text-secondary m-0">Chevrolet</p>
+                            <p class="fs-5 m-0">Chevrolet 2019 RXT</p>
+                        </div>
+                        <div class="row">
+                            <ul class="d-none d-lg-block text-warning mt-2 mb-2">
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                                <li class="fas fa-star"></li>
+                            </ul>
+                        </div>
+                        <div class="row">
+                            <p class="fw-bold fs-4">$50000</p>
+                        </div>
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input m-0 fs-3" type="radio" name="box8" value="1" checked/>
+                                <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box8" value="2"/>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- COMMENTS -->
+
+
+
+    <!-- FOOTER -->
 </div>
 </body>
 </html>
