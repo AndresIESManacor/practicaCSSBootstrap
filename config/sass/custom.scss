@@ -3,28 +3,28 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
 
 // 4. Include any optional Bootstrap components as you like
-@import "../node_modules/bootstrap/scss/root";
-@import "../node_modules/bootstrap/scss/reboot";
-@import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
-@import "../node_modules/bootstrap/scss/containers";
-@import "../node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
 
 // 5. Add additional custom code h
 
@@ -79,14 +79,14 @@ a {
   height: calc(100vh - 75px);
 }
 .bg-img-frontPage-50 {
-  background-image: url('../img/frontPageimg.jpg');
+  background-image: url('../../img/frontPageimg.jpg');
   background-size: 50% 100%;
   background-position: right;
   background-repeat: no-repeat;
 }
 .bg-img-frontPage-100 {
   background-repeat: no-repeat;
-  background-image: url('../img/frontPageimg.jpg');
+  background-image: url('../../img/frontPageimg.jpg');
   background-size: auto 100%;
   background-position: center;
 }
@@ -95,7 +95,7 @@ a {
 .bg-gif-need-for-speed-100 {
   background-repeat: no-repeat;
   padding-top: 150px;
-  background-image: url('../img/timothy-colin-pausemenugif01.gif');
+  background-image: url('../../img/timothy-colin-pausemenugif01.gif');
   background-size: auto;
   background-position: center;
   padding-bottom: 150px;

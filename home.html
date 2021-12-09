@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="dist/css/custom.css"/>
     <link rel="stylesheet" href="Font_Awesome.css"/>
 </head>
 <body>
@@ -548,15 +548,28 @@
                 <p class="p-0 m-0">Carrer Sorteta n13</p>
                 <p class="p-0 m-0">Illes Balears</p>
             </div>
-            <div class="mb-5">
+            <div class="mb-3">
                 <p class="p-0 m-0">Phone: 651106803</p>
                 <p class="p-0 m-0">Email: militaxx5@gmail.com</p>
             </div>
         </div>
         <div class="col-lg-6 d-lg-flex flex-row mt-2 pt-5">
-
+            <div class="col-lg-4 d-flex flex-column d-lg-none accordion-item">
+                <button class="accordion-button pb-3 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                    Accordion Item #1
+                </button>
+                <div id="collapseOne" class="accordion-collapse collapse d-flex flex-column d-lg-none">
+                    <a class="text-black text-decoration-none" href="#">Applications</a>
+                    <a class="text-black text-decoration-none" href="#">View all</a>
+                    <a class="text-black text-decoration-none" href="#">Buy random game</a>
+                    <a class="text-black text-decoration-none" href="#">My note for this project</a>
+                    <a class="text-black text-decoration-none" href="#">How is the most Pro</a>
+                    <a class="text-black text-decoration-none" href="#">System Operative</a>
+                    <a class="text-black text-decoration-none" href="#header">Top</a>
+                </div>
+            </div>
             <!-- COLLAPSE 1 -->
-            <div class="col-lg-4 d-flex flex-column d-lg-none">
+            <!--<div class="col-lg-4 d-flex flex-column d-lg-none">
                 <h2 class="pb-3 fw-bold"><a type="button" data-toggle="collapse" data-target="footer1">Shop by</a></h2>
                 <div class="collapse" id="footer1">
                     <a class="text-white text-decoration-none" href="#">Applications</a>
@@ -567,7 +580,7 @@
                     <a class="text-white text-decoration-none" href="#">System Operative</a>
                     <a class="text-white text-decoration-none" href="#header">Top</a>
                 </div>
-            </div>
+            </div>-->
 
             <!-- NOT COLLAPSE 1 -->
             <div class="col-lg-4 d-lg-flex flex-column d-none">
@@ -615,5 +628,6 @@
         </div>
     </div>
 </div>
+<script src="dist/js/bootstrap.js"></script>
 </body>
 </html>

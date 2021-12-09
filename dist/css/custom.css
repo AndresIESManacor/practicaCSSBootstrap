@@ -13120,7 +13120,7 @@ a {
 }
 
 .bg-img-frontPage-50 {
-  background-image: url("../img/frontPageimg.jpg");
+  background-image: url("../../img/frontPageimg.jpg");
   background-size: 50% 100%;
   background-position: right;
   background-repeat: no-repeat;
@@ -13128,7 +13128,7 @@ a {
 
 .bg-img-frontPage-100 {
   background-repeat: no-repeat;
-  background-image: url("../img/frontPageimg.jpg");
+  background-image: url("../../img/frontPageimg.jpg");
   background-size: auto 100%;
   background-position: center;
 }
@@ -13137,7 +13137,7 @@ a {
 .bg-gif-need-for-speed-100 {
   background-repeat: no-repeat;
   padding-top: 150px;
-  background-image: url("../img/timothy-colin-pausemenugif01.gif");
+  background-image: url("../../img/timothy-colin-pausemenugif01.gif");
   background-size: auto;
   background-position: center;
   padding-bottom: 150px;
