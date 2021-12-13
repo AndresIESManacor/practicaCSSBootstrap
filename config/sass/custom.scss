@@ -121,3 +121,17 @@ a {
 .form-check input:checked{
   background-color: #191919;
 }
+
+/* FITXA */
+input[value~=japan] {
+  background: radial-gradient(20px at 50% 50%, #BC002D 0, #BC002D 35%, transparent 35%, transparent 100%), white;
+}
+input[value~=spain] {
+  background: linear-gradient(red 25%, yellow 25%, yellow 75%,  red 75%);
+}
+input[value~=france] {
+  background: linear-gradient(to right, #002395 calc(100% / 3), white calc(100% / 3), white calc(100% / 3 * 2), #ED2939 calc(100% / 3 * 2));
+}
+input[value~=germany] {
+  background: linear-gradient(to bottom, black calc(100% / 3), #DD0000 calc(100% / 3), #DD0000 calc(100% / 3 * 2), #FFCE00 calc(100% / 3 * 2));
+}
