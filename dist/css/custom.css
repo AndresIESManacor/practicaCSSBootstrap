@@ -13103,6 +13103,10 @@ a {
   margin: 125px;
 }
 
+.ps-6 {
+  padding-left: 125px;
+}
+
 /* HEADER CHANGES */
 .height-header {
   height: 10vh;
