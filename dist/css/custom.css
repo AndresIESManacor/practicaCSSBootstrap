@@ -13091,6 +13091,8 @@ a {
   border: black solid 4px;
   border-radius: 0;
   width: 150px;
+  background: white;
+  color: black;
 }
 
 .cover-img {
