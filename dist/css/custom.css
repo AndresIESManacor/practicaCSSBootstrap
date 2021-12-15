@@ -13187,6 +13187,11 @@ a {
   background-color: #191919;
 }
 
+/* COMMENTS */
+.w-comments-img {
+  width: 200px;
+}
+
 /* FITXA */
 input[value~=japan] {
   background: radial-gradient(20px at 50% 50%, #BC002D 0, #BC002D 35%, transparent 35%, transparent 100%), white;
