@@ -13107,9 +13107,18 @@ a {
   margin: 125px;
 }
 
+.h-5vh {
+  height: 5vh;
+}
+
 @media only screen and (max-width: 1200px) {
   .fs-lg-3 {
     font-size: 13px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sticky-lg-none {
+    position: relative;
   }
 }
 .w-10 {
@@ -13185,6 +13194,10 @@ a {
 
 .form-check input:checked {
   background-color: #191919;
+}
+
+.car-img-size {
+  height: 10rem;
 }
 
 /* COMMENTS */

@@ -12,9 +12,9 @@
 <div class="container mw-100 h-auto m-0 p-0">
 
     <!-- HEADER -->
-    <div id="header" class="row mw-100 m-0 bg-white height-header">
+    <div id="header" class="row mw-100 m-0 bg-white sticky-top sticky-lg-none height-header">
         <div class="col-lg-3 col-5 text-center align-self-center">
-            <a href="home.html"><img class= ps-5" style="height: 5vh" src="img/iesmanacor.png" alt="iesmanacor"></a>
+            <a href="home.html"><img class="ps-lg-5 h-5vh" src="img/iesmanacor.png" alt="iesmanacor"></a>
         </div>
         <div class="col-lg-6 d-lg-block d-none text-center align-self-center">
             <nav class="navbar navbar-light d-flex justify-content-center fw-bold">
@@ -25,7 +25,7 @@
                 <a class="nav-link hover-grey" href="#footer">Contact</a>
             </nav>
         </div>
-        <div class="col-lg-3 col-7 text-end p-0 text-center align-self-center h-100 pe-lg-5 pe-3">
+        <div class="col-lg-3 col-7 text-end p-0 text-center align-self-center h-100 pe-lg-5 pe-4">
             <nav class="navbar d-flex justify-content-end pe-lg-4 fw-bold h-100">
                 <a href="list.html"><i class="far fa-search nav-link ps-2 fw-bold hover-grey mw-100 p-0"></i></a>
                 <a href="login.html"><i class="far fa-heart nav-link ps-3 fw-bold hover-grey mw-100 p-0"></i></a>
@@ -129,8 +129,10 @@
                     <!-- Single Car -->
                     <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
                         <div class="card">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                            <div class="card-img-top w-100 m-0 ps-3 pe-3 pb-5 pt-lg-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/4e5819a0e3ad150375283312694f927452ed943b.png' alt='img'>
+                                </div>
                             </div>
 
                             <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
@@ -140,13 +142,149 @@
                                         <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
                                     </div>
                                     <div class="position-absolute d-flex flex-column absolute-top">
+                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
+                                        <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="text-secondary m-0 card-text">CHEVROLET</p>
+                                    <p class="m-0 card-title">Chevrolet Camaro Z28</p>
+                                </div>
+                                <div class="row">
+                                    <ul class="d-none d-lg-block text-warning mt-1 mb-1">
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="far fa-star"></li>
+                                    </ul>
+                                </div>
+                                <div class="row card-text">
+                                    <p class="fw-bold fs-4 m-0 mb-1">$75000</p>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Car -->
+                    <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                        <div class="card">
+                            <div class="card-img-top w-100 m-0 ps-3 pe-3 pb-5 pt-lg-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/McLaren/f6a57527-cfda-4454-8761-c8ac0ed50b28.png' alt='img'>
+                                </div>
+                            </div>
+
+                            <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                            <div class="card-body">
+                                <div class="row d-none d-lg-block">
+                                    <div class="position-absolute absolute-top">
+                                        <img class="w-25 mt-3 ms-3" src='img/Logos/McLaren-Logo.png' alt='logo'>
+                                    </div>
+                                    <div class="position-absolute d-flex flex-column absolute-top">
                                         <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
+                                        <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="text-secondary m-0 card-text">MCLAREN</p>
+                                    <p class="m-0 card-title">2017 McLaren 570GT</p>
+                                </div>
+                                <div class="row">
+                                    <ul class="d-none d-lg-block text-warning mt-1 mb-1">
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="far fa-star"></li>
+                                    </ul>
+                                </div>
+                                <div class="row card-text">
+                                    <p class="fw-bold fs-4 m-0 mb-1">$201450</p>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Car -->
+                    <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                        <div class="card">
+                            <div class="card-img-top w-100 m-0 ps-3 pe-3 pb-5 pt-lg-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Aston%20Martin/AstornMartinDB112017.png' alt='img'>
+                                </div>
+                            </div>
+
+                            <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                            <div class="card-body">
+                                <div class="row d-none d-lg-block">
+                                    <div class="position-absolute absolute-top">
+                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Aston-Martin-logo.png' alt='logo'>
+                                    </div>
+                                    <div class="position-absolute d-flex flex-column absolute-top">
+                                        <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="text-secondary m-0 card-text">ASTON_MARTIN</p>
+                                    <p class="m-0 card-title">Aston Martin DB112</p>
+                                </div>
+                                <div class="row">
+                                    <ul class="d-none d-lg-block text-warning mt-1 mb-1">
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="fas fa-star"></li>
+                                        <li class="far fa-star"></li>
+                                        <li class="far fa-star"></li>
+                                    </ul>
+                                </div>
+                                <div class="row card-text">
+                                    <p class="fw-bold fs-4 m-0 mb-1">$254389</p>
+                                </div>
+                                <div class="row">
+                                    <div class="form-check">
+                                        <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Car -->
+                    <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                        <div class="card">
+                            <div class="card-img-top w-100 m-0 ps-3 pe-3 pb-5 pt-lg-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/BMW/BMWi8Coupe.png' alt='img'>
+                                </div>
+                            </div>
+
+                            <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
+                            <div class="card-body">
+                                <div class="row d-none d-lg-block">
+                                    <div class="position-absolute absolute-top">
+                                        <img class="w-25 mt-3 ms-3" src='img/Logos/580b57fcd9996e24bc43c46e.png' alt='logo'>
+                                    </div>
+                                    <div class="position-absolute d-flex flex-column absolute-top">
                                         <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
+                                    <p class="text-secondary m-0 card-text">BMV</p>
+                                    <p class="m-0 card-title">BMW i8 Coupe</p>
                                 </div>
                                 <div class="row">
                                     <ul class="d-none d-lg-block text-warning mt-1 mb-1">
@@ -158,7 +296,7 @@
                                     </ul>
                                 </div>
                                 <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
+                                    <p class="fw-bold fs-4 m-0 mb-1">$145200</p>
                                 </div>
                                 <div class="row">
                                     <div class="form-check">
@@ -174,167 +312,37 @@
                     <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
                         <div class="card">
                             <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Audi/AudiS5Sport.png' alt='img'>
+                                </div>
                             </div>
 
                             <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
                                     <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Audi-Logo-old.png' alt='logo'>
                                     </div>
                                     <div class="position-absolute d-flex flex-column absolute-top">
                                         <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
-                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
+                                        <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
+                                    <p class="text-secondary m-0 card-text">AUDI</p>
+                                    <p class="m-0 card-title">Audi S5 Sport</p>
                                 </div>
                                 <div class="row">
                                     <ul class="d-none d-lg-block text-warning mt-1 mb-1">
                                         <li class="fas fa-star"></li>
                                         <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
+                                        <li class="far fa-star"></li>
+                                        <li class="far fa-star"></li>
+                                        <li class="far fa-star"></li>
                                     </ul>
                                 </div>
                                 <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
-                                </div>
-                                <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Car -->
-                    <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
-                        <div class="card">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
-                            </div>
-
-                            <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
-                            <div class="card-body">
-                                <div class="row d-none d-lg-block">
-                                    <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
-                                    </div>
-                                    <div class="position-absolute d-flex flex-column absolute-top">
-                                        <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
-                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
-                                </div>
-                                <div class="row">
-                                    <ul class="d-none d-lg-block text-warning mt-1 mb-1">
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                    </ul>
-                                </div>
-                                <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
-                                </div>
-                                <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Car -->
-                    <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
-                        <div class="card">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
-                            </div>
-
-                            <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
-                            <div class="card-body">
-                                <div class="row d-none d-lg-block">
-                                    <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
-                                    </div>
-                                    <div class="position-absolute d-flex flex-column absolute-top">
-                                        <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
-                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
-                                </div>
-                                <div class="row">
-                                    <ul class="d-none d-lg-block text-warning mt-1 mb-1">
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                    </ul>
-                                </div>
-                                <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
-                                </div>
-                                <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Single Car -->
-                    <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
-                        <div class="card">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
-                            </div>
-
-                            <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
-                            <div class="card-body">
-                                <div class="row d-none d-lg-block">
-                                    <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
-                                    </div>
-                                    <div class="position-absolute d-flex flex-column absolute-top">
-                                        <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
-                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
-                                </div>
-                                <div class="row">
-                                    <ul class="d-none d-lg-block text-warning mt-1 mb-1">
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                    </ul>
-                                </div>
-                                <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
+                                    <p class="fw-bold fs-4 m-0 mb-1">$219900</p>
                                 </div>
                                 <div class="row">
                                     <div class="form-check">
@@ -348,24 +356,25 @@
                     <!-- Single Car -->
                     <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
                         <div class="card">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                            <div class="card-img-top w-100 m-0 ps-3 pe-3 pb-5 pt-lg-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Ferrari/FERRARI_488_PISTA_3.9_V8_TURBO_TRIBUTO_GASOLINA_F1DCT_34845512565446734.png' alt='img'>
+                                </div>
                             </div>
 
                             <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
                                     <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                                        <img class="w-25 mt-3 ms-3" src='img/Logos/pegatinas-coches-motos-ferrari-logo.png' alt='logo'>
                                     </div>
                                     <div class="position-absolute d-flex flex-column absolute-top">
                                         <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
-                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
+                                    <p class="text-secondary m-0 card-text">FERRARI</p>
+                                    <p class="m-0 card-title">Ferrari 488 Pista</p>
                                 </div>
                                 <div class="row">
                                     <ul class="d-none d-lg-block text-warning mt-1 mb-1">
@@ -377,7 +386,7 @@
                                     </ul>
                                 </div>
                                 <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
+                                    <p class="fw-bold fs-4 m-0 mb-1">$349990</p>
                                 </div>
                                 <div class="row">
                                     <div class="form-check">
@@ -388,28 +397,29 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Single Car -->
                     <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
                         <div class="card">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                            <div class="card-img-top w-100 m-0 ps-3 pe-3 pb-5 pt-lg-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Honda/model-image-2019-civic-type-r-front.png' alt='img'>
+                                </div>
                             </div>
 
                             <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
                                     <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                                        <img class="w-25 mt-3 ms-3" src='img/Logos/descarga.png' alt='logo'>
                                     </div>
                                     <div class="position-absolute d-flex flex-column absolute-top">
-                                        <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
                                         <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
+                                        <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
+                                    <p class="text-secondary m-0 card-text">HONDA</p>
+                                    <p class="m-0 card-title">Honda Civic Type-R</p>
                                 </div>
                                 <div class="row">
                                     <ul class="d-none d-lg-block text-warning mt-1 mb-1">
@@ -417,11 +427,11 @@
                                         <li class="fas fa-star"></li>
                                         <li class="fas fa-star"></li>
                                         <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
+                                        <li class="far fa-star"></li>
                                     </ul>
                                 </div>
                                 <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
+                                    <p class="fw-bold fs-4 m-0 mb-1">$34900</p>
                                 </div>
                                 <div class="row">
                                     <div class="form-check">
@@ -432,28 +442,28 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- Single Car -->
                     <div class="col-lg-3 col-6 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
                         <div class="card">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <a class="p-0"><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
+                            <div class="card-img-top w-100 m-0 ps-3 pe-3 pb-5 pt-lg-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size">
+                                    <img class="mw-100 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Ford/2020-Ford-Mustang-Shelby-colors_o8.png' alt='img'>
+                                </div>
                             </div>
 
                             <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
                                     <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Ford_logo_flat.svg.png' alt='logo'>
                                     </div>
                                     <div class="position-absolute d-flex flex-column absolute-top">
-                                        <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
                                         <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
+                                    <p class="text-secondary m-0 card-text">FORD</p>
+                                    <p class="m-0 card-title">Ford Mustang</p>
                                 </div>
                                 <div class="row">
                                     <ul class="d-none d-lg-block text-warning mt-1 mb-1">
@@ -465,7 +475,7 @@
                                     </ul>
                                 </div>
                                 <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
+                                    <p class="fw-bold fs-4 m-0 mb-1">$495000</p>
                                 </div>
                                 <div class="row">
                                     <div class="form-check">
