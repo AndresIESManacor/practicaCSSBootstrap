@@ -13103,6 +13103,11 @@ a {
   margin: 125px;
 }
 
+@media only screen and (max-width: 1200px) {
+  .fs-lg-3 {
+    font-size: 13px;
+  }
+}
 .ps-6 {
   padding-left: 125px;
 }
