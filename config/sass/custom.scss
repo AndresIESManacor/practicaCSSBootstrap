@@ -50,6 +50,9 @@ a {
 .hover-grey:hover {
   color: grey;
 }
+.hover-black:hover {
+  color: black;
+}
 .btn-outline-secondary {
   border: black solid 4px;
   border-radius: 0;
@@ -68,10 +71,21 @@ a {
     font-size: 13px;
   }
 }
-
+.w-10 {
+  width: 40px;
+}
+// No te impresiones no lo he hecho yo, aunque se nota
+.text-shadow-white {
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
 .ps-6 {
  padding-left: 125px;
 }
+
+
+
+
+
 
 /* HEADER CHANGES */
 .height-header {
@@ -81,22 +95,30 @@ a {
   font-size: 10px;
 }
 
+
+
+
+
 /* PAGINA PRINCIPAL  */
 .height-principalPage {
   height: 90vh;
 }
 .bg-img-frontPage-50 {
-  background-image: url('../../img/frontPageimg.jpg');
+  background-image: url('img/bg-carusel-1.jpg');
   background-size: 50% 100%;
   background-position: right;
   background-repeat: no-repeat;
 }
 .bg-img-frontPage-100 {
   background-repeat: no-repeat;
-  background-image: url('../../img/frontPageimg.jpg');
+  background-image: url('img/bg-carusel-1.jpg');
   background-size: cover;
   background-position: center;
 }
+
+
+
+
 
 /* AD */
 .bg-gif-need-for-speed-100 {
@@ -113,6 +135,10 @@ a {
   width: 150px;
 }
 
+
+
+
+
 /* List of Cars */
 .bg-white-cloud {
   background: #F6F6F6;
@@ -128,6 +154,8 @@ a {
 .form-check input:checked{
   background-color: #191919;
 }
+
+
 
 /* FITXA */
 input[value~=japan] {
