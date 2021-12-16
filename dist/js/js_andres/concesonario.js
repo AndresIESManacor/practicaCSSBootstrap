@@ -3,18 +3,18 @@ function getConcesonario() {
         CHEVROLET = [
             ["CHEVROLET","img/Logos/Chevrolet-logo.png"],
             {
-                name: "Chevrolet Corvette ZR1 Coupe",
-                price: 119995,
-                stars: 3,
-                labels: ["offer","new"],
-                img: "img/Cars/Chevrolet/SebringOrange.png"
-            },
-            {
                 name: "Chevrolet Camaro Z28 2014",
                 price:  75000,
                 stars: 5,
                 labels: ["new"],
                 img: "img/Cars/Chevrolet/4e5819a0e3ad150375283312694f927452ed943b.png"
+            },
+            {
+                name: "Chevrolet Corvette ZR1 Coupe",
+                price: 119995,
+                stars: 3,
+                labels: ["offer","new"],
+                img: "img/Cars/Chevrolet/SebringOrange.png"
             },
             {
                 name: "Chevrolet Corvette Grand Sport 2017",

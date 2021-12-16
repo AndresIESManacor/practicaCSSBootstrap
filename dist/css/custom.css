@@ -13197,7 +13197,16 @@ a {
 }
 
 .car-img-size {
-  height: 10rem;
+  height: 17rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .car-img-size {
+    height: 10rem;
+  }
+}
+.h-300px {
+  height: 350px;
 }
 
 /* COMMENTS */
