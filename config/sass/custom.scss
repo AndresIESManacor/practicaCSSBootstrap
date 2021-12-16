@@ -3,46 +3,53 @@
 
 // Include any default variable overrides here (though functions won't be available)
 
-@import "node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "node_modules/bootstrap/scss/variables";
-@import "node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
 
 // 4. Include any optional Bootstrap components as you like
-@import "node_modules/bootstrap/scss/root";
-@import "node_modules/bootstrap/scss/reboot";
-@import "node_modules/bootstrap/scss/type";
-@import "node_modules/bootstrap/scss/images";
-@import "node_modules/bootstrap/scss/containers";
-@import "node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
 
 // 5. Add additional custom code h
+
+$offcanvas-horizontal-width: 600px;
+
+$colors-personalitzats: (
+        "color-general" : #AACDEE, "iesandres" : #23262F, "car" : #8F0874
+);
+
+$theme-colors: map-merge($theme-colors, $colors-personalitzats);
+$theme-colors-rgb: map-merge($theme-colors-rgb, $colors-personalitzats);
+$utilities-bg-colors: map-merge($utilities-bg-colors, $colors-personalitzats);
+$utilities-text-colors: map-merge($utilities-text-colors, $colors-personalitzats);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 /* GENERAL USAGE AND CHANGES ON BOOTSTRAP CLASSES */
 a {
   color: black;
 }
-.z-back {
-  z-index: -1;
+.nav-link {
+  color: black;
 }
 .z-front {
   z-index: 1;
-}
-.fs-7 {
- font-size: 15px;
-}
-.nav-link {
-  color: black;
 }
 .fs-0 {
   font-size: 70px;
@@ -51,13 +58,6 @@ a {
   color: grey;
 }
 .hover-black:hover {
-  color: black;
-}
-.btn-outline-secondary {
-  border: black solid 4px;
-  border-radius: 0;
-  width: 150px;
-  background: white;
   color: black;
 }
 .cover-img {
@@ -86,14 +86,21 @@ a {
 .text-shadow-white {
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
+.text-shadow-black {
+  text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
+}
 .ps-6 {
  padding-left: 125px;
 }
-
-
-
-
-
+//Aqui es donde se nota que bootstrap ayuda (Si) pero es un poco kaka
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  font-size: 1rem;
+  border: none;
+  border-radius: 0;
+}
 
 /* HEADER CHANGES */
 .height-header {
@@ -102,30 +109,15 @@ a {
 .fs-10 {
   font-size: 10px;
 }
-
-
-
+.filter-lila {
+  filter: hue-rotate(300deg);
+}
 
 
 /* PAGINA PRINCIPAL  */
 .height-principalPage {
   height: 90vh;
 }
-.bg-img-frontPage-50 {
-  background-image: url('img/bg-carusel-1.jpg');
-  background-size: 50% 100%;
-  background-position: right;
-  background-repeat: no-repeat;
-}
-.bg-img-frontPage-100 {
-  background-repeat: no-repeat;
-  background-image: url('img/bg-carusel-1.jpg');
-  background-size: cover;
-  background-position: center;
-}
-
-
-
 
 
 /* AD */
@@ -137,23 +129,12 @@ a {
   background-position: center;
   padding-bottom: 150px;
 }
-.btn-outline-primary {
-  border: 0;
-  border-radius: 0;
-  width: 150px;
-}
-
-
 
 
 
 /* List of Cars */
 .bg-white-cloud {
   background: #F6F6F6;
-}
-.absolute-top {
-  top: 0;
-  left: 0;
 }
 .form-check input {
   appearance: none;
