@@ -9,7 +9,7 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('dist/css/.'));
 });
 gulp.task('js_bootstrap', function() {
-    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.js'])
+    return gulp.src(['node_modules/bootstrap/dist/js/bootstrap.bundle.js'])
         .pipe(gulp.dest("dist/js/"))
 });
 gulp.task('js_andres', function() {

@@ -13,7 +13,14 @@
 
     <!-- HEADER -->
     <div id="header" class="row mw-100 m-0 bg-white sticky-top sticky-lg-none height-header">
-        <div class="col-lg-3 col-5 text-center align-self-center">
+        <div class="col-lg-3 col-5 text-center align-self-center d-flex flex-row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasExampleLabel" aria-expanded="false" aria-label="offcanvasExampleLabel">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
             <a href="home.html"><img class="ps-lg-5 h-5vh" src="img/iesmanacor.png" alt="iesmanacor"></a>
         </div>
         <div class="col-lg-6 d-lg-block d-none text-center align-self-center">
@@ -45,10 +52,54 @@
         </nav>
     </div>
 
-
+    <!-- OFF CAVAS DE HEADER LIST -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
+        <div class="offcanvas-body p-0">
+            <hr class="mt-0 text-black-50">
+            <div class="dropdown">
+                <h4 class="ps-5 pe-5 p-0 m-0 fw-bold dropdown-toggle d-flex flex-row justify-content-between" href="#" id="dropdownMenuLinkHome" data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                </h4>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkHome">
+                    <li><a class="dropdown-item" href="home.html#top">Top</a></li>
+                    <li><a class="dropdown-item" href="home.html#listOfCars">List of Cars</a></li>
+                    <li><a class="dropdown-item" href="home.html#comments">Comments</a></li>
+                    <li><a class="dropdown-item" href="home.html#footer">Footer</a></li>
+                </ul>
+            </div>
+            <hr class="text-black-50">
+            <div class="dropdown">
+                <h4 class="ps-5 pe-5 p-0 m-0 fw-bold dropdown-toggle d-flex flex-row justify-content-between" href="#" id="dropdownMenuLinkCar" data-bs-toggle="dropdown" aria-expanded="false">
+                    Cars
+                </h4>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLinkCar">
+                    <li><a class="dropdown-item" href="list.html#search">Search</a></li>
+                    <li><a class="dropdown-item" href="list.html#footer">Footer</a></li>
+                </ul>
+            </div>
+            <hr class="text-black-50">
+            <div class="dropdown">
+                <h4 class="ps-5 fw-bold"><a class="text-decoration-none" href="#">Blog</a></h4>
+            </div>
+            <hr class="text-black-50">
+            <div class="dropdown">
+                <h4 class="ps-5 fw-bold"><a class="text-decoration-none" href="#comments">Comments</a></h4>
+            </div>
+            <hr class="text-black-50">
+            <div class="dropdown">
+                <h4 class="ps-5 fw-bold"><a class="text-decoration-none" href="#">Contact</a></h4>
+            </div>
+            <hr class="text-black-50">
+            <div class="ps-5 text-black-50">
+                <p>My Wish List</p>
+                <p>Sign in</p>
+                <p>Create an Account</p>
+            </div>
+        </div>
+    </div>
 
     <!-- FRONT PAGE -->
-    <div class="row height-principalPage mw-100 m-0">
+    <div id="top" class="row height-principalPage mw-100 m-0">
         <div class="container p-0">
             <div class="row height-principalPage m-0">
                 <div class="col-lg-6 d-lg-block d-none text-dark align-self-center ps-6 m-0 z-front">
@@ -114,7 +165,7 @@
     </div>
 
     <!-- LIST OF CARS -->
-    <div class="row mw-100 pt-5 m-0 p-0">
+    <div id="listOfCars" class="row mw-100 pt-5 m-0 p-0">
         <div class="container p-0">
             <div class="row d-flex mw-100 mb-5 m-0">
                 <p class="w-25"></p>
@@ -866,6 +917,6 @@
         </div>
     </div>
 </div>
-<script src="dist/js/bootstrap.js"></script>
+<script src="dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>

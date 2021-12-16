@@ -8,21 +8,115 @@
     <link rel="stylesheet" href="Font_Awesome.css"/>
 </head>
 <body>
-<form href="">
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+<div id="search" class="container mw-100 m-0 p-0">
+    <!-- FOOTER -->
+    <div class="row mw-100 m-0 bg-black text-white pb-5" id="footer">
+        <div class="col-lg-3 ps-5 pt-5 m-0 mt-2 p-0">
+            <a href="home.html"><img class="w-25 mb-4" src="img/iesmanacor.png" alt="img"></a>
+            <div class="mb-4">
+                <p class="p-0 m-0">Arta, 07570</p>
+                <p class="p-0 m-0">Carrer Sorteta n13</p>
+                <p class="p-0 m-0">Illes Balears</p>
+            </div>
+            <div class="mb-3">
+                <p class="p-0 m-0">Phone: 651106803</p>
+                <p class="p-0 m-0">Email: militaxx5@gmail.com</p>
+            </div>
+        </div>
+        <div class="col-lg-6 d-lg-flex flex-row mt-2 pt-lg-5">
+
+            <!-- COLLAPSE 1 -->
+            <div class="col-12 d-flex flex-column d-lg-none accordion-item bg-black">
+                <button class="accordion-button pb-3 fw-bold bg-black text-white fs-2 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#ShopBy" aria-controls="ShopBy">
+                    Shop by
+                </button>
+                <div id="ShopBy" class="accordion-collapse collapse d-lg-none ms-3 mt-3">
+                    <a class="text-white text-decoration-none p-1" href="#">Applications</a><br>
+                    <a class="text-white text-decoration-none p-1" href="#">View all</a><br>
+                    <a class="text-white text-decoration-none p-1" href="#">Buy random game</a><br>
+                    <a class="text-white text-decoration-none p-1" href="#">My note for this project</a><br>
+                    <a class="text-white text-decoration-none p-1" href="#">How is the most Pro</a><br>
+                    <a class="text-white text-decoration-none p-1" href="#">System Operative</a><br>
+                    <a class="text-white text-decoration-none p-1" href="#header">Top</a><br>
+                </div>
+            </div>
+            <!-- COLLAPSE 2 -->
+            <div class="col-12 d-flex flex-column d-lg-none accordion-item bg-black">
+                <button class="accordion-button pb-3 fw-bold bg-black text-white fs-2 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#Information" aria-controls="Information">
+                    Information
+                </button>
+                <div id="Information" class="accordion-collapse collapse d-lg-none ms-3 mt-3">
+                    <a class="text-white text-decoration-none" href="#">About us</a><br>
+                    <a class="text-white text-decoration-none" href="#">Cooperators</a><br>
+                    <a class="text-white text-decoration-none" href="#">Theme Styles</a><br>
+                    <a class="text-white text-decoration-none" href="#">Program used</a><br>
+                    <a class="text-white text-decoration-none" href="#">Time inverted</a><br>
+                    <a class="text-white text-decoration-none" href="#">Blog</a><br>
+                    <a class="text-white text-decoration-none" href="#">Settings</a><br>
+                </div>
+            </div>
+            <!-- COLLAPSE 3 -->
+            <div class="col-12 d-flex flex-column d-lg-none accordion-item bg-black">
+                <button class="accordion-button pb-3 fw-bold bg-black text-white fs-2 border-bottom" type="button" data-bs-toggle="collapse" data-bs-target="#CustomersService" aria-controls="CustomersService">
+                    Customers Service
+                </button>
+                <div id="CustomersService" class="accordion-collapse collapse d-lg-none ms-3 mt-3">
+                    <a class="text-white text-decoration-none" href="#">Help & FAQs</a><br>
+                    <a class="text-white text-decoration-none" href="#">Terms of Conditions</a><br>
+                    <a class="text-white text-decoration-none" href="#">Privacy Policy</a><br>
+                    <a class="text-white text-decoration-none" href="#">Online Browser Policy</a><br>
+                    <a class="text-white text-decoration-none" href="#">Best Programs</a><br>
+                    <a class="text-white text-decoration-none" href="#">Bests Cartor</a><br>
+                    <a class="text-white text-decoration-none" href="#">Partners</a><br>
+                </div>
+            </div>
+
+            <!-- NOT COLLAPSE 1 -->
+            <div class="col-lg-4 d-lg-flex flex-column d-none">
+                <h2 class="pb-3 fw-bold">Shop by</h2>
+                <a class="text-white text-decoration-none" href="#">Applications</a>
+                <a class="text-white text-decoration-none" href="#">View all</a>
+                <a class="text-white text-decoration-none" href="#">Buy random game</a>
+                <a class="text-white text-decoration-none" href="#">My note for this project</a>
+                <a class="text-white text-decoration-none" href="#">How is the most Pro</a>
+                <a class="text-white text-decoration-none" href="#">System Operative</a>
+                <a class="text-white text-decoration-none" href="#header">Top</a>
+            </div>
+
+            <!-- NOT COLLAPSE 2 -->
+            <div class="col-lg-4 d-lg-flex flex-column d-none">
+                <h2 class="pb-3 fw-bold">Information</h2>
+                <a class="text-white text-decoration-none" href="#">About us</a>
+                <a class="text-white text-decoration-none" href="#">Cooperators</a>
+                <a class="text-white text-decoration-none" href="#">Theme Styles</a>
+                <a class="text-white text-decoration-none" href="#">Program used</a>
+                <a class="text-white text-decoration-none" href="#">Time inverted</a>
+                <a class="text-white text-decoration-none" href="#">Blog</a>
+                <a class="text-white text-decoration-none" href="#">Settings</a>
+            </div>
+
+            <!-- NOT COLLAPSE 3 -->
+            <div class="col-lg-4 d-lg-flex flex-column d-none">
+                <h2 class="pb-3 fw-bold">Customers Service</h2>
+                <a class="text-white text-decoration-none" href="#">Help & FAQs</a>
+                <a class="text-white text-decoration-none" href="#">Terms of Conditions</a>
+                <a class="text-white text-decoration-none" href="#">Privacy Policy</a>
+                <a class="text-white text-decoration-none" href="#">Online Browser Policy</a>
+                <a class="text-white text-decoration-none" href="#">Best Programs</a>
+                <a class="text-white text-decoration-none" href="#">Bests Cartor</a>
+                <a class="text-white text-decoration-none" href="#">Partners</a>
+            </div>
+        </div>
+        <div class="col-lg-3 mt-2 pt-5 pb-lg-0 pb-5 ps-lg-0 ps-4" id="newsletter">
+            <h2>Newsletter Sign Up</h2>
+            <p>Receive our lastest updates about our games and event</p>
+            <form class="p-0 m-0 w-100 d-flex flex-row needs-validation">
+                <label for="email" class="form-label"></label>
+                <input type="email" class="form-control white w-50 p-2 me-4" id="email" aria-describedby="emailHelp" value="Email address">
+                <button type="submit" class="w-25 p-2 bg-warning text-uppercase fw-bold">Submit</button>
+            </form>
+        </div>
     </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-</form>
+</div>
 </body>
 </html>
