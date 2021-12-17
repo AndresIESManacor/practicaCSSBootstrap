@@ -103,52 +103,50 @@
     </div>
 
     <!-- OFF CAVAS DE HEADER CARRETO -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarreto" aria-labelledby="offcanvasCarretoLabel" aria-modal="true" role="dialog">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarreto">
         <!-- (NavCarreta.js) -->
-        <div id="CarretaSideNav" class="mw-100">
-            <div class="offcanvas-header mw-100 d-flex flex-row justify-content-end">
-                <button type="button" class="btn-close text-reset mw-100 text-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header mw-100 d-flex flex-row justify-content-end">
+            <button type="button" class="btn-close text-reset mw-100 text-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- Contenido del carrito -->
+        <div class="offcanvas-body">
+            <h3 class="fw-bold ps-5">Your Bag</h3>
+            <p class="ps-5">3 items</p>
+            <div class="progress ms-4 me-4">
+                <div class="w-100 progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
-            <!-- Contenido del carrito -->
-            <div class="mw-100">
-                <h3 class="fw-bold ps-5">Your Bag</h3>
-                <p class="ps-5">3 items</p>
-                <div class="progress ms-4 me-4">
-                    <div class="w-100 progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="ps-5 text-black-50 pt-2">You qualify for free shipping!</p>
+            <p class="ps-5 text-black-50 pt-2">You qualify for free shipping!</p>
 
-                <div class="row ps-3 pe-3">
-                    <!-- Single Car Carreto -->
-                    <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
-                        <div class="card">
-                            <div class="card-img-top w-100 m-0 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
-                                <div class="mw-100 car-img-size text-center p-2">
-                                    <img class="h-300px mw-100 mh-100 filter-lila" src='img/Cars/Chevrolet/4e5819a0e3ad150375283312694f927452ed943b.png' alt='img'>
+            <div class="row ps-3 pe-3 h-auto">
+
+                <!-- Single Car Carreto -->
+                <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                    <div class="card">
+                        <div class="card-img-top w-100 m-0 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                            <div class="mw-100 car-img-size text-center p-2">
+                                <img class="h-300px mw-100 mh-100 filter-lila" src='img/Cars/Chevrolet/4e5819a0e3ad150375283312694f927452ed943b.png' alt='img'>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row d-none d-lg-block">
+                                <div class="position-absolute top-0">
+                                    <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                                </div>
+                                <div class="position-absolute d-flex flex-column top-0">
+                                    <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
+                                    <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                 </div>
                             </div>
-                            <div class="card-body">
-                                <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
-                                        <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
-                                    </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
-                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
-                                        <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <p class="text-secondary m-0 card-text">CHEVROLET</p>
-                                    <p class="m-0 card-title">Chevrolet Camaro Z28</p>
-                                </div>
-                                <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$75000</p>
-                                </div>
+                            <div class="row">
+                                <p class="text-secondary m-0 card-text">CHEVROLET</p>
+                                <p class="m-0 card-title">Chevrolet Camaro Z28</p>
+                            </div>
+                            <div class="row card-text">
+                                <p class="fw-bold fs-4 m-0 mb-1">$75000</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
 
             </div>
             <div class="mw-100">
