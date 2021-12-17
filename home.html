@@ -103,7 +103,7 @@
     </div>
 
     <!-- OFF CAVAS DE HEADER CARRETO -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarreto" aria-labelledby="offcanvasCarretoLabel">
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarreto" aria-labelledby="offcanvasCarretoLabel" aria-modal="true" role="dialog">
         <!-- (NavCarreta.js) -->
         <div id="CarretaSideNav" class="mw-100">
             <div class="offcanvas-header mw-100 d-flex flex-row justify-content-end">
@@ -116,28 +116,61 @@
                 <div class="progress ms-4 me-4">
                     <div class="w-100 progress-bar progress-bar-striped progress-bar-animated bg-secondary" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <p id="canBuyNav1" class="ps-5 text-black-50 pt-2">You qualify for free shipping!</p>
-                <!-- Aqui aparecerian los articulos del usuario pero utilizo una funcion de java creada por mi para crear esos elementos (createCarNav.js)(listCarsNav.js) -->
+                <p class="ps-5 text-black-50 pt-2">You qualify for free shipping!</p>
+
+                <div class="row ps-3 pe-3">
+                    <!-- Single Car Carreto -->
+                    <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                        <div class="card">
+                            <div class="card-img-top w-100 m-0 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                                <div class="mw-100 car-img-size text-center p-2">
+                                    <img class="h-300px mw-100 mh-100 filter-lila" src='img/Cars/Chevrolet/4e5819a0e3ad150375283312694f927452ed943b.png' alt='img'>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="row d-none d-lg-block">
+                                    <div class="position-absolute top-0">
+                                        <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
+                                    </div>
+                                    <div class="position-absolute d-flex flex-column top-0">
+                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
+                                        <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <p class="text-secondary m-0 card-text">CHEVROLET</p>
+                                    <p class="m-0 card-title">Chevrolet Camaro Z28</p>
+                                </div>
+                                <div class="row card-text">
+                                    <p class="fw-bold fs-4 m-0 mb-1">$75000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
 
             </div>
-            <div class="totalNav">
+            <div class="mw-100">
                 <!-- Precio total del contenido, aqui ago la suma de todos los componentes con un js llamada (sumTotalCarreta.js) -->
-                <div class="priceTotalNav">
-                    <p>Total</p>
-                    <p id="TotalPrice"></p>
+                <div class="ps-5 row mw-100">
+                    <p class="col-6">Total</p>
+                    <p class="col-6 text-end pe-3">300$</p>
                 </div>
-                <div class="shippingNav">
-                    <p>Shipping</p>
-                    <p>Taxes and shipping fee will<br> be calculated at checkout</p>
+                <div class="ps-5 row mw-100">
+                    <p class="col-6">Shipping</p>
+                    <p class="col-6 text-end pe-3 text-black-50">Taxes and shipping fee will<br> be calculated at checkout</p>
                 </div>
-                <div class="agreeTermsNav">
-                    <label>
+                <div class="ps-5 row mw-100">
+                    <label class="col-1">
                         <input type="checkbox" name="checkNav">
                     </label>
-                    <p>I agree with the</p>
-                    <p><a id="TermsNav" href="home.html">Terms & conditions</a></p>
+                    <p class="col-5">I agree with the</p>
+                    <p class="col-6 text-end pe-3"><a id="TermsNav" href="home.html">Terms & conditions</a></p>
                 </div>
-                <input id="canBuyNav2" type="button" value="Buy" onclick="window.open('www.google.com','_self')">
+                <div class="mw-100 text-center">
+                    <input class="btn btn-car w-25" type="button" value="Buy" onclick="window.open('www.google.com','_self')">
+                </div>
             </div>
 
         </div>
