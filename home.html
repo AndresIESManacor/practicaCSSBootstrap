@@ -105,8 +105,8 @@
     <!-- OFF CAVAS DE HEADER CARRETO -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarreto">
         <!-- (NavCarreta.js) -->
-        <div class="offcanvas-header mw-100 d-flex flex-row justify-content-end">
-            <button type="button" class="btn-close text-reset mw-100 text-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        <div class="offcanvas-header d-flex flex-row justify-content-end">
+            <button type="button" class="btn-close text-reset text-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <!-- Contenido del carrito -->
         <div class="offcanvas-body">
@@ -117,26 +117,19 @@
             </div>
             <p class="ps-5 text-black-50 pt-2">You qualify for free shipping!</p>
 
-            <div class="row ps-3 pe-3 h-auto">
+            <div class="row ps-4 pe-4 h-auto">
+
+                <hr>
 
                 <!-- Single Car Carreto -->
                 <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
-                    <div class="card">
-                        <div class="card-img-top w-100 m-0 bg-white-cloud" data-bs-toggle="modal" data-bs-target="#modalMarca">
+                    <div class="card d-flex flex-row">
+                        <div class="card-img-top m-0 bg-white-cloud">
                             <div class="mw-100 car-img-size text-center p-2">
                                 <img class="h-300px mw-100 mh-100 filter-lila" src='img/Cars/Chevrolet/4e5819a0e3ad150375283312694f927452ed943b.png' alt='img'>
                             </div>
                         </div>
-                        <div class="card-body">
-                            <div class="row d-none d-lg-block">
-                                <div class="position-absolute top-0">
-                                    <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
-                                </div>
-                                <div class="position-absolute d-flex flex-column top-0">
-                                    <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
-                                    <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
-                                </div>
-                            </div>
+                        <div class="card-body align-self-center">
                             <div class="row">
                                 <p class="text-secondary m-0 card-text">CHEVROLET</p>
                                 <p class="m-0 card-title">Chevrolet Camaro Z28</p>
@@ -148,23 +141,49 @@
                     </div>
                 </div>
 
+                <hr>
+
+                <!-- Single Car Carreto -->
+                <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                    <div class="card d-flex flex-row">
+                        <div class="card-img-top m-0 bg-white-cloud">
+                            <div class="mw-100 car-img-size text-center p-2">
+                                <img class="h-300px mw-100 mh-100 filter-lila" src='img/Cars/Ford/2020-Ford-Mustang-Shelby-colors_o8.png' alt='img'>
+                            </div>
+                        </div>
+                        <div class="card-body align-self-center">
+                            <div class="row">
+                                <p class="text-secondary m-0 card-text">Mustang</p>
+                                <p class="m-0 card-title">Chevrolet Camaro Z28</p>
+                            </div>
+                            <div class="row card-text">
+                                <p class="fw-bold fs-4 m-0 mb-1">$31000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
             </div>
             <div class="mw-100">
                 <!-- Precio total del contenido, aqui ago la suma de todos los componentes con un js llamada (sumTotalCarreta.js) -->
                 <div class="ps-5 row mw-100">
                     <p class="col-6">Total</p>
-                    <p class="col-6 text-end pe-3">300$</p>
+                    <p class="col-6 text-end pe-lg-5 pe-3 fw-bold">300$</p>
                 </div>
                 <div class="ps-5 row mw-100">
                     <p class="col-6">Shipping</p>
-                    <p class="col-6 text-end pe-3 text-black-50">Taxes and shipping fee will<br> be calculated at checkout</p>
+                    <p class="col-6 text-end pe-lg-5 pe-3 text-black-50">Taxes and shipping fee will be calculated at checkout</p>
                 </div>
-                <div class="ps-5 row mw-100">
-                    <label class="col-1">
-                        <input type="checkbox" name="checkNav">
-                    </label>
-                    <p class="col-5">I agree with the</p>
-                    <p class="col-6 text-end pe-3"><a id="TermsNav" href="home.html">Terms & conditions</a></p>
+                <div class="ps-5 row mw-100 pb-5">
+                    <div class="col-6 d-flex flex-row">
+                        <label class="pe-2">
+                            <input type="checkbox" name="checkNav">
+                        </label>
+                        <p>I agree with the</p>
+                    </div>
+                    <p class="col-6 text-end pe-lg-5 pe-3"><a id="TermsNav" href="home.html">Terms & conditions</a></p>
                 </div>
                 <div class="mw-100 text-center">
                     <input class="btn btn-car w-25" type="button" value="Buy" onclick="window.open('www.google.com','_self')">
@@ -245,7 +264,7 @@
         <div class="container p-0">
             <div class="row d-flex mw-100 mb-5 m-0">
                 <p class="w-25"></p>
-                <h1 class="w-50 text-center fs-1">List Of Games</h1>
+                <h1 class="w-50 text-center fs-1">List Of Sports Cars</h1>
                 <div class="w-25 text-end align-self-center pe-lg-5">
                     <a class="text-decoration-none hover-grey" href="#">view all</a>
                 </div>
@@ -265,10 +284,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
                                         <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                     </div>
@@ -290,9 +309,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$75000</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box0" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box0" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -311,10 +334,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/McLaren-Logo.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
                                         <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                     </div>
@@ -336,9 +359,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$201450</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box10" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box10" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box10" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box10" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -357,10 +384,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Aston-Martin-logo.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                     </div>
                                 </div>
@@ -381,9 +408,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$254389</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box20" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box20" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box20" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box20" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -402,10 +433,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/580b57fcd9996e24bc43c46e.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
                                     </div>
                                 </div>
@@ -426,9 +457,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$145200</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box3" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box3" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box3" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box3" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -447,10 +482,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Audi-Logo-old.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
                                         <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                     </div>
@@ -472,9 +507,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$219900</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box4" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box4" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box4" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box4" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -492,10 +531,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/pegatinas-coches-motos-ferrari-logo.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
                                     </div>
                                 </div>
@@ -516,9 +555,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$349990</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box5" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box5" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box5" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box5" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -536,10 +579,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/descarga.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
                                         <span class="badge bg-primary w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>New!!</span>
                                     </div>
@@ -561,9 +604,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$34900</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box6" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box6" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box6" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box6" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -581,10 +628,10 @@
                             <button class="d-lg-none d-block w-100 btn btn-car">Add to Cart</button>
                             <div class="card-body">
                                 <div class="row d-none d-lg-block">
-                                    <div class="position-absolute top-0">
+                                    <div class="position-absolute top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <img class="w-25 mt-3 ms-3 p-3" src='img/Logos/Ford_logo_flat.svg.png' alt='logo'>
                                     </div>
-                                    <div class="position-absolute d-flex flex-column top-0">
+                                    <div class="position-absolute d-flex flex-column top-0" data-bs-toggle="modal" data-bs-target="#modalMarca">
                                         <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
                                     </div>
                                 </div>
@@ -605,9 +652,13 @@
                                     <p class="fw-bold fs-4 m-0 mb-1">$495000</p>
                                 </div>
                                 <div class="row">
-                                    <div class="form-check">
-                                        <input class="form-check-input m-0 fs-3" type="radio" name="box7" value="1" checked/>
-                                        <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box7" value="2"/>
+                                    <div class="form-check ps-2 p-0">
+                                        <label>
+                                            <input class="form-check-input m-0 fs-3" type="radio" name="box7" value="1" checked/>
+                                        </label>
+                                        <label>
+                                            <input class="form-check-input m-0 ms-2 fs-3" type="radio" name="box7" value="2"/>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -620,64 +671,12 @@
     </div>
 
     <!-- Modal Card -->
-    <!--<div class="modal fade" id="modalMarca" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLabelMarca" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Car <strong>Selected: </strong></h5>
-                </div>
-                <div class="modal-body">
-                    <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 pe-2">
-                        <div class="card" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="card-img-top w-100 m-0 ps-3 pb-3 pe-3 pt-4 p-lg-0 pt-lg-5 pb-lg-5 bg-white-cloud">
-                                <a class="p-0" href='#car.html'><img class="w-100 pt-lg-5 pb-lg-5 ps-lg-4 pe-lg-4 cover-img" src='img/Cars/Chevrolet/19Corvette-Z06-bean-500px.png' alt='img'></a>
-                            </div>
-
-                            <button class="d-lg-none d-block w-100 btn btn-outline-success">Add to Cart</button>
-                            <div class="card-body">
-                                <div class="row d-none d-lg-block">
-                                    <div class="position-absolute absolute-top">
-                                        <img class="w-25 mt-3 ms-3" src='img/Logos/Chevrolet-logo.png' alt='logo'>
-                                    </div>
-                                    <div class="position-absolute d-flex flex-column absolute-top">
-                                        <span class="badge bg-black w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Back Friday!!</span>
-                                        <span class="badge bg-danger w-auto align-self-end mt-3 me-3 p-2 text-white" type='button'>Offer!!</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <p class="text-secondary m-0 card-text">Chevrolet</p>
-                                    <p class="m-0 card-title">Chevrolet 2019 RXT</p>
-                                </div>
-                                <div class="row">
-                                    <ul class="d-none d-lg-block text-warning mt-1 mb-1">
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                        <li class="fas fa-star"></li>
-                                    </ul>
-                                </div>
-                                <div class="row card-text">
-                                    <p class="fw-bold fs-4 m-0 mb-1">$50000</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer justify-content-center">
-                    <input href="#" type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close">
-                    <a href="car.html"><input type="button" class="btn btn-success" value="Go"></a>
-                </div>
-            </div>
-        </div>
-    </div>-->
-
     <div class="modal fade mw-100" id="modalMarca" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLabelMarca" aria-hidden="true">
         <div class="modal-dialog mw-100 m-lg-5 m-2">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalLabelMarca">Marca <strong>Selected: </strong></h5>
-                    <input href="#" type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close">
+                    <input type="button" class="btn btn-secondary" data-bs-dismiss="modal" value="Close">
                 </div>
                 <div class="modal-body">
                     <div class="row mw-100 m-0">
