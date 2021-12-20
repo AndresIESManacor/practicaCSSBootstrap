@@ -24439,11 +24439,7 @@ textarea.form-control-lg {
   }
 }
 /* GENERAL USAGE AND CHANGES ON BOOTSTRAP CLASSES */
-a {
-  color: black;
-}
-
-.nav-link {
+a, .nav-link {
   color: black;
 }
 
@@ -24493,22 +24489,18 @@ a {
   text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
-.text-shadow-black {
-  text-shadow: 2px 0 0 #000000, -2px 0 0 #000000, 0 2px 0 #000000, 0 -2px 0 #000000, 1px 1px #000000, -1px -1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000;
-}
-
 .ps-6 {
   padding-left: 125px;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
 }
 
 .navbar-toggler {
   font-size: 1rem;
   border: none;
   border-radius: 0;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 /* HEADER CHANGES */
@@ -24522,6 +24514,10 @@ a {
 
 .filter-lila {
   filter: hue-rotate(300deg);
+}
+
+.filter-blue {
+  filter: hue-rotate(150deg);
 }
 
 /* PAGINA PRINCIPAL  */

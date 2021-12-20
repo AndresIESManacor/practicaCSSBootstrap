@@ -42,10 +42,7 @@ $utilities-text-colors: map-merge($utilities-text-colors, $colors-personalitzats
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 /* GENERAL USAGE AND CHANGES ON BOOTSTRAP CLASSES */
-a {
-  color: black;
-}
-.nav-link {
+a ,.nav-link {
   color: black;
 }
 .z-front {
@@ -90,13 +87,13 @@ a {
  padding-left: 125px;
 }
 //Aqui es donde se nota que bootstrap ayuda (Si) pero es un poco kaka
-.navbar-toggler:focus {
-  box-shadow: none;
-}
 .navbar-toggler {
   font-size: 1rem;
   border: none;
   border-radius: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
 /* HEADER CHANGES */
@@ -106,8 +103,12 @@ a {
 .fs-10 {
   font-size: 10px;
 }
+
 .filter-lila {
   filter: hue-rotate(300deg);
+}
+.filter-blue {
+  filter: hue-rotate(150deg);
 }
 
 
