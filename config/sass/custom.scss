@@ -28,40 +28,60 @@
 
 // 5. Add additional custom code h
 
+// Changes on cavas lenght when open
 $offcanvas-horizontal-width: 600px;
 
-$colors-personalitzats: (
-        "color-general" : #AACDEE, "iesandres" : #23262F, "car" : #8F0874
+// Changes on font size attrib
+$font-sizes: (
+        1: 70px,
+        2: 50px,
+        3: 30px,
+        4: 25px,
+        5: 10px,
+        6: 0.5rem,
 );
 
-$theme-colors: map-merge($theme-colors, $colors-personalitzats);
-$theme-colors-rgb: map-merge($theme-colors-rgb, $colors-personalitzats);
-$utilities-bg-colors: map-merge($utilities-bg-colors, $colors-personalitzats);
-$utilities-text-colors: map-merge($utilities-text-colors, $colors-personalitzats);
+$theme-colors: (
+        "warning": #AACDEE,
+        "info": #8F0874,
+        "success": #ff33f6,
+        "light": #23262F
+);
+$spacer: 1rem;
+$spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 3,
+        5: 125px,
+);
+
+$negative-spacers: if($enable-negative-margins, negativify-map($spacers), null);
+
+$utilities: map-merge(
+                $utilities,
+                (
+                        "font-size": map-merge(
+                                        map-get($utilities, "font-size"),
+                                        (
+                                                values: $font-sizes,
+                                        ),
+                        ),
+                )
+);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 /* GENERAL USAGE AND CHANGES ON BOOTSTRAP CLASSES */
-a ,.nav-link {
-  color: black;
-}
 .z-front {
   z-index: 1;
 }
-.fs-0 {
-  font-size: 70px;
-}
-.hover-grey:hover {
-  color: grey;
-}
-.hover-black:hover {
+a, .nav-link {
   color: black;
 }
 .cover-img {
   object-fit: cover;
-}
-.m-6 {
-  margin: 125px;
 }
 .h-5vh {
   height: 5vh;
@@ -99,9 +119,6 @@ a ,.nav-link {
 /* HEADER CHANGES */
 .height-header {
   height: 10vh;
-}
-.fs-10 {
-  font-size: 10px;
 }
 
 .filter-lila {
