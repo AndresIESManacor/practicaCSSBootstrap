@@ -74,6 +74,22 @@ $utilities: map-merge(
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 /* GENERAL USAGE AND CHANGES ON BOOTSTRAP CLASSES */
+.object-cover {
+  object-fit: cover;
+}
+@for $x from 0 through 10 {
+  //Custom width
+  .w-#{$x*10} {
+    width: $x * 10%;
+  }
+}
+@for $x from 0 through 10 {
+  //Custom width
+  .h-#{$x*10} {
+    height: $x * 10%;
+  }
+}
+
 .z-front {
   z-index: 1;
 }
@@ -96,7 +112,7 @@ a, .nav-link {
     position: relative;
   }
 }
-.w-10 {
+.w-10-px {
   width: 40px;
 }
 // No te impresiones no lo he hecho yo, aunque se nota

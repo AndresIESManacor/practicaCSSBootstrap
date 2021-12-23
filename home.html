@@ -9,51 +9,50 @@
     <link rel="stylesheet" href="Font_Awesome.css"/>
 </head>
 <body>
-<div class="container mw-100 h-auto m-0 p-0">
-
-    <!-- HEADER -->
-    <div id="header" class="row mw-100 m-0 bg-white sticky-top sticky-lg-none height-header">
-        <div class="col-lg-3 col-5 text-center align-self-center d-flex flex-row">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasExampleLabel" aria-expanded="false" aria-label="offcanvasExampleLabel">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </nav>
-            <a href="home.html"><img class="ps-lg-5 h-5vh" src="img/iesmanacor.png" alt="iesmanacor"></a>
-        </div>
-        <div class="col-lg-6 d-lg-block d-none text-center align-self-center">
-            <nav class="navbar navbar-light d-flex justify-content-center fw-bold">
-                <a class="nav-link" href="home.html">Home</a>
-                <a class="nav-link" href="list.html">Cars</a>
-                <a class="nav-link" href="#">Blog</a>
-                <a class="nav-link" href="#comments">Comments</a>
-                <a class="nav-link" href="#footer">Contact</a>
-            </nav>
-        </div>
-        <div class="col-lg-3 col-7 text-end p-0 text-center align-self-center h-100 pe-lg-5 pe-4">
-            <nav class="navbar d-flex justify-content-end pe-lg-4 fw-bold h-100">
-                <a href="list.html"><i class="far fa-search nav-link ps-2 fw-bold mw-100 p-0"></i></a>
-                <a href="login.html"><i class="far fa-heart nav-link ps-3 fw-bold mw-100 p-0"></i></a>
-                <a class="navbar-toggler m-0 p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarreto" aria-controls="offcanvasCarretoLabel" aria-expanded="false" aria-label="offcanvasCarretoLabel" href="#">
-                    <i class="far fa-shopping-cart nav-link ps-3 fw-bold mw-100 position-relative p-0">
-                        <span class="position-absolute top-50 start-100 translate-middle bg-black text-white p-1 rounded-circle fs-5">1</span>
-                    </i>
-                </a>
-                <img class="ps-3 d-none d-lg-block w-10 p-0" src="img/flags/3253482-flag-spain-icon_106784.png" alt="esp">
-            </nav>
-        </div>
-        <nav aria-label="breadcrumb" class="d-none d-lg-block mw-100 p-0 m-0 fw-bold">
-            <ol class="breadcrumb ms-4">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Data</li>
-            </ol>
+<!-- HEADER -->
+<header id="header" class="row mw-100 m-0 bg-white sticky-top sticky-lg-none height-header">
+    <div class="col-lg-3 col-5 text-center align-self-center d-flex flex-row">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasHeader" aria-controls="offcanvasExampleLabel" aria-expanded="false" aria-label="offcanvasExampleLabel">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <a href="home.html"><img class="ps-lg-5 h-5vh" src="img/iesmanacor.png" alt="iesmanacor"></a>
+    </div>
+    <div class="col-lg-6 d-lg-block d-none text-center align-self-center">
+        <nav class="navbar navbar-light d-flex justify-content-center fw-bold">
+            <a class="nav-link" href="home.html">Home</a>
+            <a class="nav-link" href="list.html">Cars</a>
+            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="#comments">Comments</a>
+            <a class="nav-link" href="#footer">Contact</a>
         </nav>
     </div>
+    <div class="col-lg-3 col-7 text-end p-0 text-center align-self-center h-100 pe-lg-5 pe-4">
+        <nav class="navbar d-flex justify-content-end pe-lg-4 fw-bold h-100">
+            <a href="list.html"><i class="far fa-search nav-link ps-2 fw-bold mw-100 p-0"></i></a>
+            <a href="login.html"><i class="far fa-heart nav-link ps-3 fw-bold mw-100 p-0"></i></a>
+            <a class="navbar-toggler m-0 p-0" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCarreto" aria-controls="offcanvasCarretoLabel" aria-expanded="false" aria-label="offcanvasCarretoLabel" href="#">
+                <i class="far fa-shopping-cart nav-link ps-3 fw-bold mw-100 position-relative p-0">
+                    <span class="position-absolute top-50 start-100 translate-middle bg-black text-white p-1 rounded-circle fs-5">1</span>
+                </i>
+            </a>
+            <img class="ps-3 d-none d-lg-block w-10-px p-0" src="img/flags/3253482-flag-spain-icon_106784.png" alt="esp">
+        </nav>
+    </div>
+    <nav aria-label="breadcrumb" class="d-none d-lg-block mw-100 p-0 m-0 fw-bold">
+        <ol class="breadcrumb ms-4">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+        </ol>
+    </nav>
+</header>
+<section class="container mw-100 h-auto m-0 p-0">
 
     <!-- OFF CAVAS DE HEADER LIST -->
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
+    <section class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
         <div class="offcanvas-header mw-100 d-flex flex-row justify-content-end">
             <button type="button" class="btn-close text-reset mw-100 text-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
@@ -100,10 +99,10 @@
             </div>
             <br>
         </div>
-    </div>
+    </section>
 
     <!-- OFF CAVAS DE HEADER CARRETO -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarreto">
+    <section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCarreto">
         <!-- (NavCarreta.js) -->
         <div class="offcanvas-header d-flex flex-row justify-content-end">
             <button type="button" class="btn-close text-reset text-end" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -124,7 +123,7 @@
                 <hr>
 
                 <!-- Single Car Carreto -->
-                <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                <article class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
                     <div class="card d-flex flex-row">
                         <div class="card-img-top m-0 bg-white-cloud">
                             <div class="mw-100 car-img-size text-center p-2">
@@ -141,12 +140,12 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <hr>
 
                 <!-- Single Car Carreto -->
-                <div class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
+                <article class="col-12 position-relative ps-lg-3 pe-lg-3 mb-lg-4 mb-3 ps-lg-2 pe-lg-2 ps-1 pe-1">
                     <div class="card d-flex flex-row">
                         <div class="card-img-top m-0 bg-white-cloud">
                             <div class="mw-100 car-img-size text-center p-2">
@@ -163,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </article>
 
                 <hr>
 
@@ -193,10 +192,10 @@
             </div>
 
         </div>
-    </div>
+    </section>
 
     <!-- FRONT PAGE -->
-    <div id="top" class="row height-principalPage mw-100 m-0">
+    <section id="top" class="row height-principalPage mw-100 m-0">
         <div class="container p-0">
             <div class="row height-principalPage m-0">
                 <div class="col-lg-6 d-lg-block d-none text-dark align-self-center ps-6 m-0">
@@ -242,10 +241,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- AD -->
-    <div class="row mw-100 m-0 mt-4 mb-4">
+    <section class="row mw-100 m-0 mt-4 mb-4">
         <div class="container">
             <div class="row text-white bg-gif-need-for-speed-100 cover-img ps-3">
                 <div class="col-lg-6 d-lg-block d-none text-start p-0">
@@ -259,10 +258,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- LIST OF CARS -->
-    <div id="listOfCars" class="row mw-100 pt-5 m-0 p-0">
+    <section id="listOfCars" class="row mw-100 pt-5 m-0 p-0">
         <div class="container p-0">
             <div class="row d-flex mw-100 mb-5 m-0">
                 <p class="w-25"></p>
@@ -670,10 +669,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Modal Card -->
-    <div class="modal fade mw-100" id="modalMarca" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLabelMarca" aria-hidden="true">
+    <section class="modal fade mw-100" id="modalMarca" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="modalLabelMarca" aria-hidden="true">
         <div class="modal-dialog mw-100 m-lg-5 m-2">
             <div class="modal-content">
                 <div class="modal-header">
@@ -801,10 +800,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- COMMENTS -->
-    <div class="row mw-100 m-0 mt-4 mb-4 pb-5" id="comments">
+    <section class="row mw-100 m-0 mt-4 mb-4 pb-5" id="comments">
         <div class="text-center mt-4">
             <h4>What Our Customers Say...</h4>
             <p>See what other people, think about buying games on our page.</p>
@@ -883,10 +882,10 @@
                 <input type="button" name="moveRight" value=">">
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- FOOTER -->
-    <div class="row mw-100 m-0 bg-black text-white pb-5" id="footer">
+    <footer class="row mw-100 m-0 bg-black text-white pb-5" id="footer">
         <div class="col-lg-3 ps-5 pt-5 m-0 mt-2 p-0">
             <a href="home.html"><img class="w-25 mb-4" src="img/iesmanacor.png" alt="img"></a>
             <div class="mb-4">
@@ -992,8 +991,8 @@
                 <button type="submit" class="w-25 p-2 bg-warning text-uppercase fw-bold">Submit</button>
             </form>
         </div>
-    </div>
-</div>
+    </footer>
+</section>
 <script src="dist/js/bootstrap.bundle.js"></script>
 <script>
     var myCarousel = document.querySelector('#myCarousel')
