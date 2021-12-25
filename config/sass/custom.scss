@@ -93,6 +93,7 @@ $utilities: map-merge(
 .z-front {
   z-index: 1;
 }
+// Necesito cambiarlo asin ya que sino no puedo hacer hover personalizados, ademas que no me gusta que este de color azul
 a, .nav-link {
   color: black;
 }
@@ -107,6 +108,7 @@ a, .nav-link {
     font-size: 13px;
   }
 }
+// Truquito para que funcione el sticky
 @media only screen and (min-width: 1200px) {
   .sticky-lg-none {
     position: relative;
